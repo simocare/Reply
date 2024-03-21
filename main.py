@@ -104,3 +104,12 @@ Tile_D = Tile(None, 'right', 'up', 'down')
 Tile_E = Tile('left', 'right', 'up', 'down')
 Tile_F = Tile('left', 'right', 'up', 'down')
 
+# Create a WxH matrix filled with None
+matrix = [[None for _ in range(W)] for _ in range(H)]
+# Populate the matrix with the golden points
+for gx, gy in golden_points:
+    matrix[gy][gx] = 'G'  # 'G' represents a golden point
+
+# Populate the matrix with the silver points
+for sx, sy, ssc in silver_points:
+    matrix[sy][sx] = ssc  # punteggio del silver point
