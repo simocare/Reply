@@ -29,11 +29,6 @@ def read_file(filename):
 
 # MAIN PROGRAM
 
-# Call the function with the filename
+# Call the function with the data from the file
 W, H, golden_points, silver_points, tiles = read_file('00-trailer.txt')
 
-# Print the data to verify it's correct
-print(f'W: {W}, H: {H}')
-print(f'Golden Points: {golden_points}')
-print(f'Silver Points: {silver_points}')
-print(f'Tiles: {tiles}')
